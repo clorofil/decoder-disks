@@ -1,0 +1,37 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+.image-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.rotatable {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center center;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+}
+
+.controls {
+    margin-top: 200px;
+}
+
+.control-set {
+    margin-bottom: 10px;
+}

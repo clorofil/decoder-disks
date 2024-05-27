@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Rotator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="disk1.png" id="image1" class="rotatable" style="width: 560px; height: 560px;">
+            <img src="disk2.png" id="image2" class="rotatable" style="width: 480px; height: 480px;">
+            <img src="disk3.png" id="image3" class="rotatable" style="width: 400px; height: 400px;">
+            <img src="disk4.png" id="image4" class="rotatable" style="width: 320px; height: 320px;">
+        </div>
+        <div class="controls">
+            <div class="control-set">
+                <button onclick="rotateImage('image1', -36)">&#8592;</button>
+                <button onclick="rotateImage('image1', 36)">&#8594;</button>
+            </div>
+            <div class="control-set">
+                <button onclick="rotateImage('image2', -36)">&#8592;</button>
+                <button onclick="rotateImage('image2', 36)">&#8594;</button>
+            </div>
+            <div class="control-set">
+                <button onclick="rotateImage('image3', -36)">&#8592;</button>
+                <button onclick="rotateImage('image3', 36)">&#8594;</button>
+            </div>
+            <div class="control-set">
+                <button onclick="rotateImage('image4', -36)">&#8592;</button>
+                <button onclick="rotateImage('image4', 36)">&#8594;</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
