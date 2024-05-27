@@ -1,4 +1,3 @@
-
 body {
     display: flex;
     justify-content: center;
@@ -9,13 +8,14 @@ body {
 }
 
 .container {
-    text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 .image-container {
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 350px; /* Adjust to fit the largest image */
+    height: 350px;
 }
 
 .rotatable {
@@ -24,14 +24,41 @@ body {
     left: 50%;
     transform-origin: center center;
     transform: translate(-50%, -50%);
-    width: 100%;
-    height: auto;
+}
+
+#image1 {
+    width: 560px;
+    height: 560px;
+}
+
+#image2 {
+    width: 480px;
+    height: 480px;
+}
+
+#image3 {
+    width: 400px;
+    height: 400px;
+}
+
+#image4 {
+    width: 320px;
+    height: 320px;
 }
 
 .controls {
-    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px; /* Adjust space between image container and controls */
 }
 
 .control-set {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 10px;
+}
+
+button {
+    margin: 5px; /* Space between the buttons */
 }
