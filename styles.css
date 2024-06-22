@@ -52,6 +52,11 @@ body {
     margin-left: 300px; /* Adjust space between image container and controls */
 }
 
+#projectSelect {
+    margin-bottom: 20px;
+    margin-right: 300px;
+}
+
 .control-set {
     display: flex;
     justify-content: center;
