@@ -9,6 +9,7 @@ function rotateImage(imageId, angle) {
 
 function changeProject() {
     const project = document.getElementById('projectSelect').value;
+    const sideDiskContainer = document.getElementById('sideDiskContainer');
     let images;
 
     if (project === 'project1') {
@@ -18,6 +19,7 @@ function changeProject() {
             'disk1_3.png',
             'disk1_4.png'
         ];
+        sideDiskContainer.style.display = 'none';
     } else if (project === 'project2') {
         images = [
             'disk2_1.png',
@@ -25,6 +27,16 @@ function changeProject() {
             'disk2_3.png',
             'disk2_4.png'
         ];
+        sideDiskContainer.style.display = 'none';
+    } else if (project === 'project3') {
+        images = [
+            'disk3_1.png',
+            'disk3_2.png',
+            'disk3_3.png',
+            'disk3_4.png'
+        ];
+        sideDiskContainer.style.display = 'flex';
+        rotateImage('image5', 45)  // just to make sure it doesn't start with the perfect code
     }
 
     document.getElementById('image1').src = images[0];
@@ -32,3 +44,5 @@ function changeProject() {
     document.getElementById('image3').src = images[2];
     document.getElementById('image4').src = images[3];
 }
+
+window.onload = changeProject;

@@ -11,31 +11,51 @@
         <select id="projectSelect" onchange="changeProject()">
             <option value="project1">Project 1</option>
             <option value="project2">Project 2</option>
+            <option value="project3">Project 3</option>
         </select>
-        <div class="image-container">
-            <img src="disk1_1.png" id="image1" class="rotatable">
-            <img src="disk1_2.png" id="image2" class="rotatable">
-            <img src="disk1_3.png" id="image3" class="rotatable">
-            <img src="disk1_4.png" id="image4" class="rotatable">
+        <div class="disks-container">
+            <div class="controls">
+                <div class="image-container">
+                    <img src="disk1_1.png" id="image1" class="rotatable">
+                    <img src="disk1_2.png" id="image2" class="rotatable">
+                    <img src="disk1_3.png" id="image3" class="rotatable">
+                    <img src="disk1_4.png" id="image4" class="rotatable">
+                </div>
+                <div class="control-set">
+                    <button onclick="rotateImage('image1', -36)">&#8592;</button>
+                    <button onclick="rotateImage('image1', 36)">&#8594;</button>
+                </div>
+                <div class="control-set">
+                    <button onclick="rotateImage('image2', -36)">&#8592;</button>
+                    <button onclick="rotateImage('image2', 36)">&#8594;</button>
+                </div>
+                <div class="control-set">
+                    <button onclick="rotateImage('image3', -36)">&#8592;</button>
+                    <button onclick="rotateImage('image3', 36)">&#8594;</button>
+                </div>
+                <div class="control-set">
+                    <button onclick="rotateImage('image4', -36)">&#8592;</button>
+                    <button onclick="rotateImage('image4', 36)">&#8594;</button>
+                </div>
+            </div>
+            <div class="controls" id="sideDiskContainer">
+                <div class="image-container">
+                    <img src="disk3_5.png" id="image5" class="rotatable">
+                    <img src="disk3_6.png" id="image6" class="rotatable">
+                </div>
+                <div class="control-set">
+                    <button onclick="rotateImage('image5', -15)">&#8592;</button>
+                    <button onclick="rotateImage('image5', 15)">&#8594;</button>
+                </div>
+                <div class="control-set">
+                    <button onclick="rotateImage('image6', -15)">&#8592;</button>
+                    <button onclick="rotateImage('image6', 15)">&#8594;</button>
+                </div>
+            </div>
+
         </div>
-        <div class="controls">
-            <div class="control-set">
-                <button onclick="rotateImage('image1', -36)">&#8592;</button>
-                <button onclick="rotateImage('image1', 36)">&#8594;</button>
-            </div>
-            <div class="control-set">
-                <button onclick="rotateImage('image2', -36)">&#8592;</button>
-                <button onclick="rotateImage('image2', 36)">&#8594;</button>
-            </div>
-            <div class="control-set">
-                <button onclick="rotateImage('image3', -36)">&#8592;</button>
-                <button onclick="rotateImage('image3', 36)">&#8594;</button>
-            </div>
-            <div class="control-set">
-                <button onclick="rotateImage('image4', -36)">&#8592;</button>
-                <button onclick="rotateImage('image4', 36)">&#8594;</button>
-            </div>
-        </div>
+
+
     </div>
     <script src="script.js"></script>
 </body>

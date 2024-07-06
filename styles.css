@@ -10,13 +10,26 @@ body {
 .container {
     display: flex;
     align-items: center;
+    flex-direction: column;
+}
+
+.disks-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .image-container {
     position: relative;
     width: 350px; /* Adjust to fit the largest image */
     height: 350px;
+    margin: 250px;
+    margin-left: 125px;
+    margin-right: 125px;
+    margin-top: 250px;
+    margin-bottom: 250px;
 }
+
 
 .rotatable {
     position: absolute;
@@ -46,22 +59,31 @@ body {
     height: 320px;
 }
 
-.controls {
-    display: flex;
-    flex-direction: column;
-    margin-left: 300px; /* Adjust space between image container and controls */
+#image5 {
+    width: 560px;
+    height: 560px;
 }
 
+#image6 {
+    width: 420px;
+    height: 420px;
+}
+
+
+.controls {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
 #projectSelect {
-    margin-bottom: 20px;
-    margin-right: 300px;
 }
 
 .control-set {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
 }
 
 button {
