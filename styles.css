@@ -23,10 +23,8 @@ body {
     position: relative;
     width: 350px; /* Adjust to fit the largest image */
     height: 350px;
-    margin: 250px;
     margin-left: 125px;
     margin-right: 125px;
-    margin-top: 250px;
     margin-bottom: 250px;
 }
 

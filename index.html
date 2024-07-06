@@ -8,11 +8,6 @@
 </head>
 <body>
     <div class="container">
-        <select id="projectSelect" onchange="changeProject()">
-            <option value="project1">Project 1</option>
-            <option value="project2">Project 2</option>
-            <option value="project3">Project 3</option>
-        </select>
         <div class="disks-container">
             <div class="controls">
                 <div class="image-container">
@@ -21,6 +16,11 @@
                     <img src="disk1_3.png" id="image3" class="rotatable">
                     <img src="disk1_4.png" id="image4" class="rotatable">
                 </div>
+                <select id="projectSelect" onchange="changeProject()">
+                    <option value="project1">Project 1</option>
+                    <option value="project2">Project 2</option>
+                    <option value="project3">Project 3</option>
+                </select>
                 <div class="control-set">
                     <button onclick="rotateImage('image1', -36)">&#8592;</button>
                     <button onclick="rotateImage('image1', 36)">&#8594;</button>
