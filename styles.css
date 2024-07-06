@@ -2,7 +2,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: auto;
     margin: 0;
     background-color: #f0f0f0;
 }
@@ -16,16 +16,16 @@ body {
 .disks-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .image-container {
     position: relative;
-    width: 350px; /* Adjust to fit the largest image */
-    height: 350px;
-    margin-left: 94px;
-    margin-right: 94px;
-    margin-bottom: 160px;
+    width: 420px; /* Adjust to fit the largest image */
+    height: 420px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 140px;
 }
 
 
@@ -72,6 +72,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+
 }
 
 
